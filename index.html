@@ -5,10 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    
+    <main>
+        <img class="logo" src="/Images/Logo.png" alt="Logo Alura">
+        <div class="area-trabajo">
+            <div>
+                <textarea name="text-area" class="text-area" id="" cols="30" rows="10">
+
+                </textarea>
+            </div>
+
+            <h5>Solo letras mayúsuculas y sin acentos</h5>
+
+            <div class="botones">
+                <button class="encriptador"> Encriptar </button>
+                <button class="desencriptador"> Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="resultado">
+            <div class="sin-resultado">
+                <img class="munieco" src="/Images/Muñeco.png" alt="Dibujo de hombre con una lupa">
+                <h4>Ningún mensaje fue encontrado</h4>
+                <p>Ingresa el texto que desees encriptar o descencriptar</p>
+            </div>
+            <div class="con-resultado">
+                <p class="resultado"> </p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Cristian Melero | 2022 </p>
+    </footer>
 </body>
-<script src="funciones.js"></script>
+<!-- <script src="funciones.js"></script> -->
+<script>
+var textoIngresado = 'HOLA SOY CRISTIAN y voy a ser tu mejor amigo'
+var texto = textoIngresado.toLowerCase()
+var textoEncriptado = ''
+
+function replacer(str) {
+  for (var i=0; i<str.lenght; i++) {
+    var caracter = x.charAt(i);
+    if (caracter == 'e'){
+        caracter.replace('e', 'enter');
+        textoEncriptado += caracter;
+    }
+    else if(caracter == 'a'){
+        caracter.replace('a', 'ai');
+        textoEncriptado += caracter;
+    }
+    else if(caracter == 'i'){
+        caracter.replace('i', 'imes');
+        textoEncriptado += caracter;
+    }
+    else if(caracter == 'o'){
+        caracter.replace('o', 'ober');
+        textoEncriptado += caracter;
+    }
+    else if(caracter == 'u'){
+        caracter.replace('u', 'ufat');
+        textoEncriptado += caracter;
+    }
+    else {
+        textoEncriptado += caracter
+    }
+    return textoEncriptado
+    
+  }
+}
+
+var resultado = replacer(texto)
+console.log(resultado)
+</script>
 </html>

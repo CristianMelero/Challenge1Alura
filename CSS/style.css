@@ -1,0 +1,57 @@
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+body {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+div {
+    border: 3px solid black;
+}
+
+div.area-trabajo, div.resultado {
+
+    display: inline-block;
+}
+
+.resultado {
+
+}
+
+.area-trabajo {
+    width: 70%;
+
+}
+.botones {
+
+}
+
+.resultado {
+    width: auto;
+}
+
+.munieco {
+
+}
+
+footer {
+    text-align: center;
+}
